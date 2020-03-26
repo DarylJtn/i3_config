@@ -424,3 +424,6 @@ mode "$mode_gaps_outer" {
 }
 exec --no-startup-id feh --bg-fill ~/wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+for_window [title="Microsoft Teams Notification" class="microsoft teams - preview"] floating enable
+
+for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable 
