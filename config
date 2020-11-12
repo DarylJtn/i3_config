@@ -52,8 +52,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 exec --no-startup-id feh --bg-fill ~/wallpaper.jpg
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -10%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 1 +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 1 -10%
 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
@@ -422,8 +422,8 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+exec --no-start-up dunst
 exec --no-startup-id feh --bg-fill ~/wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 for_window [title="Microsoft Teams Notification" class="microsoft teams - preview"] floating enable
-
 for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable 
